@@ -1,0 +1,27 @@
+{
+  "name": "node_ts_dev_temp",
+  "version": "1.0.0",
+  "description": "NodeJs TypeScript 开发模版",
+  "main": "App.ts",
+  "scripts": {
+    "start": "tsc && node ./dist/App.js",
+    "test": "tsc && node ./dist/test/Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polarbear88/NodeTSDevTemp.git"
+  },
+  "author": "polarbear",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polarbear88/NodeTSDevTemp/issues"
+  },
+  "homepage": "https://github.com/polarbear88/NodeTSDevTemp#readme",
+  "dependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "typescript": "^4.5.5"
+  }
+}
