@@ -1,0 +1,6 @@
+{
+    "assets": [
+        "bin/index-en.jsc",
+        "bin/public/**/*"
+    ]
+}

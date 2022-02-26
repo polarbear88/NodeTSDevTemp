@@ -1,8 +1,15 @@
 需要全局安装
     @vercel/ncc
     bytenode
+    pkg
+    typeorm
 
-typeorm schema:sync 同步表
+命令
+    typeorm schema:sync 同步表
+    npm start 启动
+    npm test 启动测试
+    npm run pack 打包
+
 
 bin目录 
     index.js 为打包的单js文件 

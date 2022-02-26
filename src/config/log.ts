@@ -8,6 +8,15 @@ function getFilename() {
     return path.join(__dirname, "/logs/") + "log.log";
 }
 
+function getAppenders() {
+    const r = ["consoleout"];
+    // 如果在pkg打包的环境下则不输出文件日志
+    if (__dirname.indexOf("snapshot") == -1) {
+        r.push("fileout");
+    }
+    return r;
+}
+
 export default {
     "appenders": {
         "fileout": {
@@ -22,10 +31,7 @@ export default {
     },
     "categories": {
         "default": {
-            "appenders": [
-                "fileout",
-                "consoleout"
-            ],
+            "appenders": getAppenders(),
             "level": "info"
         }
     }

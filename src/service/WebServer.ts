@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 16:30:24
- * @LastEditTime: 2022-02-26 23:03:34
+ * @LastEditTime: 2022-02-27 02:27:44
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/service/WebServer.ts
@@ -24,6 +24,7 @@ export default class WebServer {
         if (path.basename(__filename) === "WebServer.js") {
             WebServer.expressApp.use(express.static(path.join(__dirname, "../../public")));
         } else {
+            // 已被打包
             WebServer.expressApp.use(express.static(path.join(__dirname, "/public")));
         }
         // 开始监听
