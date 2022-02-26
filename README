@@ -1,6 +1,13 @@
 需要全局安装
-    @vercel/ncc -g
+    @vercel/ncc
+    bytenode
 
 typeorm schema:sync 同步表
 
-bin目录 index.js 为打包的单js文件 index-en.js 为混淆后的打包的单js文件
+bin目录 
+    index.js 为打包的单js文件 
+    index-en.js 为混淆后的打包的单js文件
+    index-en.jsc 为混淆后的打包的单js文件的字节码
+    public目录为复制的public数据
+    build.js 为运行index-en.jsc的入口 要运行 index-en.jsc 
+        只需要确保 build.js和index-en.jsc在同目录然后运行build.js
