@@ -1,0 +1,20 @@
+{
+    "appenders": {
+        "fileout": {
+            "type": "file",
+            "filename": "./logs/log.log"
+        },
+        "consoleout": {
+            "type": "console"
+        }
+    },
+    "categories": {
+        "default": {
+            "appenders": [
+                "fileout",
+                "consoleout"
+            ],
+            "level": "info"
+        }
+    }
+}
