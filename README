@@ -1,3 +1,5 @@
+nodejs TypeScript 开发模版
+
 需要全局安装
     @vercel/ncc
     bytenode
