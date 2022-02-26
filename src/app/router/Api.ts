@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 16:36:05
- * @LastEditTime: 2022-02-26 17:47:40
+ * @LastEditTime: 2022-02-26 18:01:02
  * @LastEditors: polarbear
  * @Description: 此目录存放路由
  * @FilePath: /NodeTSDevTemp/src/app/router/Api.ts
@@ -20,7 +20,7 @@ export default class ApiRouter {
 
     private addRouter() {
         this.router.get("/hello", async (req, res) => {
-            res.send("<h1>hello world!</h1>");
+            res.send("<h1>NodeTSDevTemp API</h1>");
         });
     }
 

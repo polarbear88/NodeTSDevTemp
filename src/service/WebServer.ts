@@ -1,10 +1,10 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 16:30:24
- * @LastEditTime: 2022-02-26 17:20:58
+ * @LastEditTime: 2022-02-26 17:59:30
  * @LastEditors: polarbear
  * @Description: 
- * @FilePath: /NodeTSDevTemp/src/Service/WebServer.ts
+ * @FilePath: /NodeTSDevTemp/src/service/WebServer.ts
  */
 import express from "express";
 import path from "path";
@@ -21,10 +21,10 @@ export default class WebServer {
         // 应用路由
         Router.applyAllRouter(WebServer.expressApp);
         // 应用静态文件
-        WebServer.expressApp.use(express.static(path.join(__dirname, "../src/public")));
+        WebServer.expressApp.use(express.static(path.join(__dirname, "../../src/public")));
         // 开始监听
         WebServer.expressApp.listen(port, "0.0.0.0", () => {
-            AppLog.info("WebServer runing!");
+            AppLog.info("WebServer runing port: " + port + "!");
         });
     }
 }
