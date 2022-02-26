@@ -4,9 +4,11 @@
   "description": "NodeJs TypeScript 开发模版",
   "main": "App.ts",
   "scripts": {
-    "start": "tsc && node ./dist/App.js",
-    "test": "tsc && node ./dist/test/Index.js",
-    "build": "tsc"
+    "start": "./node_modules/typescript/bin/tsc && node ./dist/App.js",
+    "test": "./node_modules/typescript/bin/tsc && node ./dist/test/Index.js",
+    "build": "./node_modules/typescript/bin/tsc",
+    "obf": "./node_modules/javascript-obfuscator/bin/javascript-obfuscator ./bin/index.js --output ./bin/index-en.js --string-array-encoding rc4 --compact true",
+    "ncc": "ncc build ./dist/App.js -o bin"
   },
   "repository": {
     "type": "git",
@@ -36,9 +38,8 @@
     "string-random": "^0.1.3",
     "typeorm": "^0.2.44",
     "typescript": "^4.5.5",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
-    "@types/uuid": "^8.3.4"
+    "uuid": "^8.3.2",
+    "@types/uuid": "^8.3.4",
+    "javascript-obfuscator": "^4.0.0"
   }
 }

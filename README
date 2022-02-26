@@ -1,0 +1,6 @@
+需要全局安装
+    @vercel/ncc -g
+
+typeorm schema:sync 同步表
+
+bin目录 index.js 为打包的单js文件 index-en.js 为混淆后的打包的单js文件

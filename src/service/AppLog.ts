@@ -1,14 +1,14 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 17:03:08
- * @LastEditTime: 2022-02-26 17:50:43
+ * @LastEditTime: 2022-02-26 21:18:07
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/service/AppLog.ts
  */
 
 import Log4js from "log4js";
-import logConfig from "../config/log.json";
+import logConfig from "../config/log";
 
 export default class AppLog {
 

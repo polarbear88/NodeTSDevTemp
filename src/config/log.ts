@@ -1,4 +1,4 @@
-{
+export default {
     "appenders": {
         "fileout": {
             "type": "file",
@@ -17,4 +17,4 @@
             "level": "info"
         }
     }
-}
+};
