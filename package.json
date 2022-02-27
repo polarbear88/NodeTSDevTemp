@@ -9,8 +9,8 @@
     "build": "./node_modules/typescript/bin/tsc",
     "obf": "./node_modules/javascript-obfuscator/bin/javascript-obfuscator ./bin/index.js --output ./bin/index-en.js --string-array-encoding rc4 --compact true",
     "ncc": "ncc build ./dist/App.js -o ./bin/ && cp -r ./public ./bin/public",
-    "bytenode": "bytenode --compile ./bin/index-en.js && cp ./build.js ./bin/build.js",
-    "pack": "npm run build && npm run ncc && npm run obf && npm run bytenode && pkg ./bin/build.js --out-path ./bin -c pkg.json"
+    "bytenode": "bytenode --compile ./bin/index-en.js && cp ./bootstrap.js ./bin/bootstrap.js",
+    "pack": "npm run build && npm run ncc && npm run obf && npm run bytenode && pkg ./bin/bootstrap.js --out-path ./bin --config pkg.json"
   },
   "repository": {
     "type": "git",

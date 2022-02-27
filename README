@@ -18,5 +18,5 @@ bin目录
     index-en.js 为混淆后的打包的单js文件
     index-en.jsc 为混淆后的打包的单js文件的字节码
     public目录为复制的public数据
-    build.js 为运行index-en.jsc的入口 要运行 index-en.jsc 
-        只需要确保 build.js和index-en.jsc在同目录然后运行build.js
+    bootstrap.js 为运行index-en.jsc的入口 要运行 index-en.jsc 
+        只需要确保 bootstrap.js和index-en.bootstrap.js
