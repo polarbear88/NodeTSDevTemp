@@ -1,13 +1,14 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 18:03:10
- * @LastEditTime: 2022-02-26 18:12:38
+ * @LastEditTime: 2022-02-28 03:43:44
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/utils/CryptoUtil.ts
  */
 
 import crypto from "crypto";
+import CryptoJS from "crypto-js";
 const _md5 = require("md5-node");
 
 export default class CryptoUtil {

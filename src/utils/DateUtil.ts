@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 15:00:53
- * @LastEditTime: 2022-02-26 15:04:02
+ * @LastEditTime: 2022-02-28 03:44:07
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/utils/DateUtil.ts
@@ -18,7 +18,7 @@ export default class DateUtil {
      * @param date 
      * @returns 
      */
-    public static formatDateTime(format = "yyyy-MM-DD HH:mm:ss", date?: Date) {
+    public static formatDateTime(date?: Date, format = "yyyy-MM-DD HH:mm:ss") {
         if (!date) {
             date = new Date();
         }

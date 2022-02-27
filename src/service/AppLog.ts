@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 17:03:08
- * @LastEditTime: 2022-02-26 21:18:07
+ * @LastEditTime: 2022-02-28 03:44:26
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/service/AppLog.ts
@@ -21,7 +21,7 @@ export default class AppLog {
      * @param content 
      * @param categorie 
      */
-    public static info(content: string, categorie?: string) {
+    public static info(content: any, categorie?: string) {
         Log4js.getLogger(categorie).info(content);
     }
 
@@ -30,7 +30,7 @@ export default class AppLog {
     * @param content 
     * @param categorie 
     */
-    public static warn(content: string, categorie?: string) {
+    public static warn(content: any, categorie?: string) {
         Log4js.getLogger(categorie).warn(content);
     }
 
@@ -39,7 +39,7 @@ export default class AppLog {
     * @param content 
     * @param categorie 
     */
-    public static error(content: string, categorie?: string) {
+    public static error(content: any, categorie?: string) {
         Log4js.getLogger(categorie).error(content);
     }
 
@@ -48,7 +48,7 @@ export default class AppLog {
     * @param content 
     * @param categorie 
     */
-    public static fatal(content: string, categorie?: string) {
+    public static fatal(content: any, categorie?: string) {
         Log4js.getLogger(categorie).fatal(content);
     }
 
