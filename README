@@ -5,12 +5,15 @@ nodejs TypeScript 开发模版
     bytenode
     pkg
     typeorm
+    javascript-obfuscator
+    typescript
 
 命令
     typeorm schema:sync 同步表
     npm start 启动
     npm test 启动测试
     npm run pack 打包
+    npm run packinwin 在windows开发环境中打包
 
 
 bin目录 

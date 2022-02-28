@@ -4,13 +4,12 @@
   "description": "NodeJs TypeScript 开发模版",
   "main": "App.ts",
   "scripts": {
-    "start": "./node_modules/typescript/bin/tsc && node ./dist/App.js",
-    "test": "./node_modules/typescript/bin/tsc && node ./dist/test/Index.js",
-    "build": "./node_modules/typescript/bin/tsc",
-    "obf": "./node_modules/javascript-obfuscator/bin/javascript-obfuscator ./bin/index.js --output ./bin/index-en.js --string-array-encoding rc4 --compact true",
-    "ncc": "ncc build ./dist/App.js -o ./bin/ && cp -r ./public ./bin/public",
-    "bytenode": "bytenode --compile ./bin/index-en.js && cp ./bootstrap.js ./bin/bootstrap.js",
-    "pack": "npm run build && npm run ncc && npm run obf && npm run bytenode && pkg ./bin/bootstrap.js --out-path ./bin --config pkg.json"
+    "start": "tsc && node ./dist/App.js",
+    "test": "tsc && node ./dist/test/Index.js",
+    "build": "tsc",
+    "pack": "sh ./shell/pack.sh",
+    "packinwin": "./shell/pack.bat",
+    "clean": "rimraf dist/* && rimraf bin/*"
   },
   "repository": {
     "type": "git",
