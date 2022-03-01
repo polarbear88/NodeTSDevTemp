@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 16:30:24
- * @LastEditTime: 2022-02-27 02:27:44
+ * @LastEditTime: 2022-03-01 17:40:50
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/service/WebServer.ts
@@ -22,7 +22,7 @@ export default class WebServer {
         Router.applyAllRouter(WebServer.expressApp);
         // 应用静态文件
         if (path.basename(__filename) === "WebServer.js") {
-            WebServer.expressApp.use(express.static(path.join(__dirname, "../../public")));
+            WebServer.expressApp.use(express.static(path.join(__dirname, "../../../public")));
         } else {
             // 已被打包
             WebServer.expressApp.use(express.static(path.join(__dirname, "/public")));

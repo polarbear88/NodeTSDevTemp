@@ -4,7 +4,7 @@
 npm run build
 
 #将js代码打包为单js
-ncc build ./dist/App.js -o ./bin/
+ncc build ./dist/src/App.js -o ./bin/
 
 #将public目录复制
 cp -rf ./public ./bin/public

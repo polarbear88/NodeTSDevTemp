@@ -14,6 +14,10 @@ nodejs TypeScript 开发模版
     npm test 启动测试
     npm run pack 打包
     npm run packinwin 在windows开发环境中打包
+    npm run watchview 监听编译vue项目
+    npm run buildview 编译vue项目
+    // 打包前请先编译vue项目
+
 
 
 bin目录 
@@ -23,3 +27,6 @@ bin目录
     public目录为复制的public数据
     bootstrap.js 为运行index-en.jsc的入口 要运行 index-en.jsc 
         只需要确保 bootstrap.js和index-en.bootstrap.js
+
+view目录
+    使用前后端分离方案view目录为一个独立的vue+ts项目 打包后会输出到public目录

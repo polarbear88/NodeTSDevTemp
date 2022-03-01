@@ -1,6 +1,6 @@
 call npm run build
 
-call ncc build .\dist\App.js -o .\bin\
+call ncc build .\dist\src\App.js -o .\bin\
 
 xcopy .\public\ .\bin\public\ /Y/D/E
 

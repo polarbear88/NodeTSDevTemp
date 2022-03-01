@@ -1,15 +1,17 @@
 {
   "name": "node_ts_dev_temp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NodeJs TypeScript 开发模版",
   "main": "App.ts",
   "scripts": {
-    "start": "tsc && node ./dist/App.js",
-    "test": "tsc && node ./dist/test/Index.js",
+    "start": "tsc && node ./dist/src/App.js",
+    "test": "tsc && node ./dist/src/test/Index.js",
     "build": "tsc",
     "pack": "sh ./shell/pack.sh",
     "packinwin": "./shell/pack.bat",
-    "clean": "rimraf dist/* && rimraf bin/*"
+    "clean": "rimraf dist/* && rimraf bin/*",
+    "watchview": "cd view && npm run watch",
+    "buildview": "cd view && npm run build"
   },
   "repository": {
     "type": "git",

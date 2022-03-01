@@ -3,7 +3,7 @@ import path from "path";
 function getFilename() {
     const fname = path.basename(__filename);
     if (fname === "log.js") {
-        return path.join(__dirname, "../../logs/") + "log.log";
+        return path.join(__dirname, "../../../logs/") + "log.log";
     }
     return path.join(__dirname, "/logs/") + "log.log";
 }
