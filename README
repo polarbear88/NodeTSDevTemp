@@ -1,5 +1,15 @@
 nodejs TypeScript 开发模版
 
+启动:
+    确保安装下面的全局包之后
+    npm i
+    cd view
+    npm i
+    cd ..
+    npm run buildview
+    npm start
+
+
 需要全局安装
     @vercel/ncc
     bytenode
