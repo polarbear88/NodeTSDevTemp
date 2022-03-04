@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --dest='../public' --no-clean",
-    "watch": "vue-cli-service build --dest='../public' --watch --no-clean",
+    "build": "vue-cli-service build --dest=../public --no-clean",
+    "watch": "vue-cli-service build --dest=../public --watch --no-clean",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
