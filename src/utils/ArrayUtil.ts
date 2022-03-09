@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 14:57:39
- * @LastEditTime: 2022-03-01 03:30:26
+ * @LastEditTime: 2022-03-09 18:06:31
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/utils/ArrayUtil.ts
@@ -34,7 +34,7 @@ export default class ArrayUtil {
             if (objKey) {
                 total = total + element[objKey];
             } else {
-                total = total + element
+                total = total + element;
             }
         });
         return total;
