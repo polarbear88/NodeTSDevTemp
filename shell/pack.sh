@@ -9,6 +9,9 @@ ncc build ./dist/src/App.js -o ./bin/
 #将public目录复制
 cp -rf ./public ./bin/public
 
+#将res目录复制
+cp -rf ./res ./bin/res
+
 #将单js混淆
 javascript-obfuscator ./bin/index.js --output ./bin/index-en.js --string-array-encoding rc4 --compact true
 

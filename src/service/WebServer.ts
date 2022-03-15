@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 16:30:24
- * @LastEditTime: 2022-03-01 17:40:50
+ * @LastEditTime: 2022-03-15 23:04:48
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/service/WebServer.ts
@@ -9,6 +9,7 @@
 import express from "express";
 import path from "path";
 import Router from "../app/router/Router";
+import ProgramUtil from "../utils/ProgramUtil";
 import AppLog from "./AppLog";
 
 export default class WebServer {
@@ -20,13 +21,9 @@ export default class WebServer {
         WebServer.expressApp = express();
         // 应用路由
         Router.applyAllRouter(WebServer.expressApp);
-        // 应用静态文件
-        if (path.basename(__filename) === "WebServer.js") {
-            WebServer.expressApp.use(express.static(path.join(__dirname, "../../../public")));
-        } else {
-            // 已被打包
-            WebServer.expressApp.use(express.static(path.join(__dirname, "/public")));
-        }
+        // 应用静态文件 
+        AppLog.info(path.join(ProgramUtil.getRootPath(), "/public"));
+        WebServer.expressApp.use(express.static(path.join(ProgramUtil.getRootPath(), "/public")));
         // 开始监听
         WebServer.expressApp.listen(port, "0.0.0.0", () => {
             AppLog.info("WebServer runing port: " + port + "!");

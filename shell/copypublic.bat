@@ -1,1 +1,0 @@
-xcopy .\dist\* ..\public\ /Y/D/E
