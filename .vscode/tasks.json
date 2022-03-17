@@ -9,7 +9,7 @@
                 "$tsc-watch"
             ],
             "group": "build",
-            "label": "tsc: 监视 - tsconfig.json"
+            "label": "tsc: 监视 - tsconfig.json",
         },
         {
             "type": "typescript",
@@ -18,7 +18,25 @@
                 "$tsc"
             ],
             "group": "build",
-            "label": "tsc: 构建 - tsconfig.json"
+            "label": "tsc: 构建 - tsconfig.json",
+        },
+        {
+            "type": "shell",
+            "command": "npm run watchview",
+            "group": "build",
+            "label": "npm: run watchview",
+        },
+        {
+            "type": "shell",
+            "command": "npm run buildview",
+            "group": "build",
+            "label": "npm: run buildview"
+        },
+        {
+            "type": "shell",
+            "command": "tsc -watch & npm run watchview",
+            "group": "build",
+            "label": "watchAll"
         }
     ]
 }

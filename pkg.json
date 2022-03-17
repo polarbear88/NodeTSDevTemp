@@ -2,6 +2,7 @@
     "assets": [
         "bin/index-en.jsc",
         "bin/public/**/*",
-        "bin/res/**/*"
+        "bin/res/**/*",
+        "ormconfig.json"
     ]
 }
