@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 17:03:08
- * @LastEditTime: 2022-02-28 03:44:26
+ * @LastEditTime: 2022-03-18 16:38:09
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/service/AppLog.ts
@@ -50,6 +50,18 @@ export default class AppLog {
     */
     public static fatal(content: any, categorie?: string) {
         Log4js.getLogger(categorie).fatal(content);
+    }
+
+    public static errorEx(error: any, content?: any, categorie?: string) {
+        let cn = content;
+        if (cn) {
+            cn += "\n";
+        } else {
+            cn = "";
+        }
+        cn += `name: ${error.name} message: ${error.message}
+        stack: ${error.stack}`;
+        AppLog.error(cn, categorie);
     }
 
 }

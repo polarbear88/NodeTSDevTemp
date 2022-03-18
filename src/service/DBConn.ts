@@ -1,17 +1,17 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 16:10:02
- * @LastEditTime: 2022-02-26 16:13:43
+ * @LastEditTime: 2022-03-17 17:27:33
  * @LastEditors: polarbear
  * @Description: 
- * @FilePath: /NodeTSDevTemp/src/DBConn.ts
+ * @FilePath: /NodeTSDevTemp/src/service/DBConn.ts
  */
 
 import { Connection } from "typeorm";
 
 export default class DBConn {
 
-    private static conn: Connection | undefined;
+    private static conn: Connection;
 
     /**
      * 设置数据库连接
