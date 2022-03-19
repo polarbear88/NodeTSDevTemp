@@ -1,7 +1,7 @@
 /*
  * @Author: polarbear
  * @Date: 2022-02-26 14:56:23
- * @LastEditTime: 2022-03-15 23:02:41
+ * @LastEditTime: 2022-03-20 00:30:12
  * @LastEditors: polarbear
  * @Description: 
  * @FilePath: /NodeTSDevTemp/src/utils/ProgramUtil.ts
@@ -54,7 +54,7 @@ export default class ProgramUtil {
      * @returns 
      */
     public static getAppPath() {
-        return process.cwd();
+        return ProgramUtil.isPkg() ? path.dirname(process.execPath) : process.cwd();
     }
 
 }
